@@ -21,7 +21,7 @@
     First, clone the project to your local machine:
 
     ```bash
-    git clone git@github.com:yourusername/cwifforge.git
+    git clone git@github.com:rataprens/cwifforge.git
     ```
 
 2. **Install dependencies**
