@@ -31,10 +31,10 @@ const formatNumber = (num: string | number | null) => {
 
   if (isNaN(parsedNum)) return "Invalid number";
 
-  if (parsedNum >= 1e12) return `$${(parsedNum / 1e12).toFixed(2)}T`;
-  if (parsedNum >= 1e9) return `$${(parsedNum / 1e9).toFixed(2)}B`;
-  if (parsedNum >= 1e6) return `$${(parsedNum / 1e6).toFixed(2)}M`;
-  if (parsedNum >= 1e3) return `$${(parsedNum / 1e3).toFixed(2)}K`;
+  if (parsedNum >= 1e12) return `${(parsedNum / 1e12).toFixed(2)}T`;
+  if (parsedNum >= 1e9) return `${(parsedNum / 1e9).toFixed(2)}B`;
+  if (parsedNum >= 1e6) return `${(parsedNum / 1e6).toFixed(2)}M`;
+  if (parsedNum >= 1e3) return `${(parsedNum / 1e3).toFixed(2)}K`;
 
   return `$${parsedNum.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 };
@@ -213,7 +213,7 @@ const CWIFForge: React.FC = () => {
         console.error("Error fetching stats:", error);
       }
     };
-
+    
     fetchStats();
   }, []);
 
